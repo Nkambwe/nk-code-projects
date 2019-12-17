@@ -3,10 +3,21 @@
     margin:0;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
+.content-container {
+    height: 100vh;
+    padding-top: 70px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 280px; /* Set width on the form input elements since they're 100% wide by default */
 }
 

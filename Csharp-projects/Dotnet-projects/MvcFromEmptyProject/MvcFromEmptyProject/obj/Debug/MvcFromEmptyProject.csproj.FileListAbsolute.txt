@@ -66,3 +66,4 @@ C:\nk-code-projects\Csharp-projects\Dotnet-projects\MvcFromEmptyProject\MvcFromE
 C:\nk-code-projects\Csharp-projects\Dotnet-projects\MvcFromEmptyProject\MvcFromEmptyProject\obj\Debug\MvcFromEmptyProject.csproj.CopyComplete
 C:\nk-code-projects\Csharp-projects\Dotnet-projects\MvcFromEmptyProject\MvcFromEmptyProject\obj\Debug\MvcFromEmptyProject.dll
 C:\nk-code-projects\Csharp-projects\Dotnet-projects\MvcFromEmptyProject\MvcFromEmptyProject\obj\Debug\MvcFromEmptyProject.pdb
+C:\nk-code-projects\Csharp-projects\Dotnet-projects\MvcFromEmptyProject\MvcFromEmptyProject\obj\Debug\MvcFromEmptyProject.csprojAssemblyReference.cache
