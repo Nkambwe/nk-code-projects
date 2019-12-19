@@ -1,4 +1,49 @@
-﻿@model MvcFromEmptyProject.Models.Item
+﻿@model MvcFromEmptyProject.ViewModels.CategoryViewModel
+@{
+    var parent = @Model.Category.ParentCategory;
+    var category =  @Model.Category;
+    var catcode =  @Model.Category.CatNumber;
+}
+<div class="tab-pane ml-2 mt-3">
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-primary text-white">
+            @if (!string.IsNullOrWhiteSpace(parent)) {
+                <div class="row">
+                    <div class="col-12">
+                        <span class="h4">Category   : <em class=" small text-light">@parent</em></span>
+                    </div>
+                    <div class="col-12">
+                        <span class="h4">Subcategory : <em class="small text-light">@category</em></span>
+                    </div>
+                    <div class="col-12">
+                        <span class="h4">Cat Number  : <em class="small text-light">@catcode</em></span>
+                    </div>
+                </div>
+            } else {
+                <div class="row">
+                    <div class="col-12">
+                        <span class="h4">Category   : <em class="text-light">@category</em></span>
+                    </div>
+                    <div class="col-12">
+                        <span class="h4">Cat Number : <em class="text-light">@catcode</em></span>
+                    </div>
+                </div>
+            }
 
-<span class="display-4">@Model.ItemName</span>
+        </li>
+        
+        <!------------------------------------------- If no items display no item infor-->
+        @if (@Model.Items == null || @Model.Items.Count == 0) {
+            <li class="list-group-item">
+                <span  class="mb-2 lead">No Inventory Items found</span>
+            </li>
+        } else {
+            foreach (var item in @Model.Items) {
+               <li class="list-group-item"><span class="mb-2 lead">@item</span></li>
+            }
+        }
+        
+    </ul>
+
+</div>
 
